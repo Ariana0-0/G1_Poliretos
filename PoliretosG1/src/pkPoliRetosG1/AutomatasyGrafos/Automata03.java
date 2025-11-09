@@ -1,4 +1,4 @@
-package pkPoliRetosG1.validadorAutomata;
+package pkPoliRetosG1.AutomatasyGrafos;
 
 public class Automata03 {
     // automata a+|b+|c+

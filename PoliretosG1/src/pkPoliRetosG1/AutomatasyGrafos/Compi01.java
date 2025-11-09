@@ -1,4 +1,4 @@
-package pkPoliRetosG1.validadorAutomata;
+package pkPoliRetosG1.AutomatasyGrafos;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
