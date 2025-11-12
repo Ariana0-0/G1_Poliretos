@@ -30,7 +30,7 @@ public class L03_DesplazamientoDeCaracter {
 
     }
 
-    public void g1_L03pedirCaracterYDesplazarWhile(char caracter) throws InterruptedException{
+    public static void g1_L03pedirCaracterYDesplazarWhile(char caracter) throws InterruptedException{
 
         //Usando while:
         System.out.println("2. WHILE: ");
@@ -59,7 +59,7 @@ public class L03_DesplazamientoDeCaracter {
 
     }
 
-    public void g1_L03pedirCaracterYDesplazarDoWhile(char caracter) throws InterruptedException{
+    public static void g1_L03pedirCaracterYDesplazarDoWhile(char caracter) throws InterruptedException{
         
         //Usando do-while:
         System.out.println("3. DO-WHILE: ");
