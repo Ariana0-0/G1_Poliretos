@@ -7,5 +7,6 @@ public class App {
 
         Controller app = new Controller();
         
+        app.run();
     }
 }
