@@ -1,6 +1,6 @@
 package pkPoliRetosG1;
-import pkPoliRetosG1.Arrays;
-import pkPoliRetosG1.Persona;
+//import pkPoliRetosG1.Arrays;
+//import pkPoliRetosG1.Persona;
 import java.util.Scanner;
 
 
@@ -10,7 +10,7 @@ public class Controller {
     private String nombre2;
     private String apellido1;
     private String apellido2;
-    private Integer termino;
+    //private Integer termino;
     private Persona persona;
 
     Scanner sc = new Scanner(System.in);
