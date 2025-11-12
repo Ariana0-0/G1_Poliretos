@@ -1,5 +1,7 @@
 package pkPoliRetosG1.Arrays;
 
+import java.util.Scanner;
+
 public class Array {
 
     public Array(){
@@ -10,9 +12,14 @@ public class Array {
         System.out.println("-----------EJERCICIOS ARRAYS --------------");
 
         System.out.println("A01) Crear una array para cada palabra de su nombre e ingrese el porcentaje de carga para cada palabra.");
-        A01_PorcentajeNombre.g1_A01_porcentajeNombreFor();
-        A01_PorcentajeNombre.g1_A01_porcentajeNombreWhile();
-        A01_PorcentajeNombre.g1_A01_porcentajeNombreDoWhile();
+
+        Scanner scc = new Scanner(System.in);
+        System.out.println("Ingrese los porcentajes de carga separados por espacio (4 cantidades):");
+        String[] porcentajesTexto = scc.nextLine().split(" ");
+
+        A01_PorcentajeNombre.g1_A01_porcentajeNombreFor(primerNombre, segundoNombre, primerApellido, segundoApellido, porcentajesTexto);
+        A01_PorcentajeNombre.g1_A01_porcentajeNombreWhile(primerNombre, segundoNombre, primerApellido, segundoApellido, porcentajesTexto);
+        A01_PorcentajeNombre.g1_A01_porcentajeNombreDoWhile(primerNombre, segundoNombre, primerApellido, segundoApellido, porcentajesTexto);
 
         System.out.println("A02) Crear una matriz solicitando el tamaño y caracter para almacenar las iniciales de su nombre y apellido y presentar la matriz");
         A02_InicialesNombre.g1_A02_inicialesNombreFor();

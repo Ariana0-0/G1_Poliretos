@@ -17,7 +17,8 @@ public class L04_Waiting {
             if (pos == 3) pos = 0;
             else pos++;
         }
-
+        System.out.println(" ");
+        System.out.println("Carga Completa.");
     }
 
     public static void g1_L04simularMovimientoWaitingWhile() throws InterruptedException{
@@ -38,7 +39,8 @@ public class L04_Waiting {
 
             k++;
         }
-
+        System.out.println(" ");
+        System.out.println("Carga Completa.");
     }
 
     public static void g1_L04simularMovimientoWaitingDoWhile() throws InterruptedException{
@@ -59,6 +61,8 @@ public class L04_Waiting {
 
             w++;
         } while (w <= 100);
+        System.out.println(" ");
+        System.out.println("Carga Completa.");
     }
 
 }

@@ -3,8 +3,8 @@ package pkPoliRetosG1.Loadings;
 public class L08_CargaConNombreApellido {
 
     public static void g1_L08realizarCargaConNombreyApellidoCompletoFor (String nombre1, String apellido1, String apellido2) throws InterruptedException{
-        String nombreCompleto = nombre1 + " " + apellido1 + " " + apellido2;
-
+        String nombreCompleto = nombre1 + apellido1 + apellido2;
+        System.out.println(nombreCompleto);
         double tamanio1 = nombreCompleto.length();
         
 
@@ -19,22 +19,23 @@ public class L08_CargaConNombreApellido {
         }
 
         int posicionFor = 0;
-        for (double porcentaje = 0; porcentaje <= 100; porcentaje += porcentajePorCaracter){
+        for (double porcentaje = 0; porcentaje <= 101; porcentaje += porcentajePorCaracter){
             //Conversion de String a Array para ubicar caracter por caracter en la barra
-            if ((porcentaje % porcentajePorCaracter == 0) && (porcentaje != 0)) {
+            if (porcentaje != 0) {
                 barra[posicionFor] = nombreCompleto.charAt(posicionFor);
                 posicionFor++;
             }
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
-            System.out.print("\r[" + barraString + "]" + porcentaje + "%" );
-            Thread.sleep(100);
+            System.out.print("\r[" + barraString + "]" + String.format("%.1f", porcentaje) + "%" );
+            Thread.sleep(400);
         }
+        System.out.println(" ");
         System.out.println("Carga Completa.");
     }
 
     public static void g1_L08realizarCargaConNombreyApellidoCompletoWhile (String nombre1, String apellido1, String apellido2) throws InterruptedException{
-        String nombreCompleto = nombre1 + " " + apellido1 + " " + apellido2;
+        String nombreCompleto = nombre1 + apellido1 + apellido2;
 
         double tamanio1 = nombreCompleto.length();
         
@@ -52,23 +53,24 @@ public class L08_CargaConNombreApellido {
 
         double k1 = 0;
         int posicionWhile = 0;
-        while(k1 <= 100){
+        while(k1 <= 101){
             //Conversion de String a Array para ubicar caracter por caracter en la barra
-            if (k1 % porcentajePorCaracter == 0 && k1 != 0) {
+            if (k1 != 0) {
                 barra[posicionWhile] = nombreCompleto.charAt(posicionWhile);
                 posicionWhile++;
             }
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
-            System.out.print("\r[" + barraString + "]" + k1 + "%" );
+            System.out.print("\r[" + barraString + "]" +String.format("%.1f", k1) + "%" );
             Thread.sleep(100);
             k1+=porcentajePorCaracter;
         }
+        System.out.println(" ");
         System.out.println("Carga Completa.");
     }
 
     public static void g1_L08realizarCargaConNombreyApellidoCompletoDoWhile (String nombre1, String apellido1, String apellido2) throws InterruptedException{
-        String nombreCompleto = nombre1 + " " + apellido1 + " " + apellido2;
+        String nombreCompleto = nombre1 + apellido1 + apellido2;
 
         double tamanio1 = nombreCompleto.length();
         
@@ -87,16 +89,17 @@ public class L08_CargaConNombreApellido {
         int posicionDoWhile = 0;
         do{
             //Conversion de String a Array para ubicar caracter por caracter en la barra
-            if (w % porcentajePorCaracter == 0 && w != 0) {
+            if (w != 0) {
                 barra[posicionDoWhile] = nombreCompleto.charAt(posicionDoWhile);
                 posicionDoWhile++;
             }
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
-            System.out.print("\r[" + barraString + "]" + w + "%" );
+            System.out.print("\r[" + barraString + "]" + String.format("%.1f", w) + "%" );
             Thread.sleep(100);
             w+= porcentajePorCaracter;
-        } while (w <= 100);
+        } while (w <= 101);
+        System.out.println(" ");
         System.out.println("Carga Completa.");
     }
 

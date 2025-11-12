@@ -10,7 +10,7 @@ public class A05_MatrizAleatoriaNombre {
 
         char[] arregloNombreCompleto = nombreCompleto.toCharArray();
 
-        int tamanio = 10;
+        int tamanio = nombre1.length();
 
         Random random = new Random();
 
@@ -32,7 +32,7 @@ public class A05_MatrizAleatoriaNombre {
             System.out.println("-------------------------");
             imprimirMatricesChar(matrizCaracteresAleatorios);
             System.out.println("-------------------------");
-            Thread.sleep(200);
+            Thread.sleep(300);
             
         }
 
@@ -67,8 +67,10 @@ public class A05_MatrizAleatoriaNombre {
                 matrizCaracteresAleatorios[filaRand][colRand] = '*';
             }
 
+            System.out.println("-------------------------");
             imprimirMatricesChar(matrizCaracteresAleatorios);
-            Thread.sleep(1000);
+            System.out.println("-------------------------");
+            Thread.sleep(300);
             k++;
         }
 
@@ -103,8 +105,10 @@ public class A05_MatrizAleatoriaNombre {
                 matrizCaracteresAleatorios[filaRand][colRand] = '*';
             }
 
+            System.out.println("-------------------------");
             imprimirMatricesChar(matrizCaracteresAleatorios);
-            Thread.sleep(500);
+            System.out.println("-------------------------");
+            Thread.sleep(300);
             w++;
         }while (w < nombreCompleto.length());
 
@@ -120,6 +124,7 @@ public class A05_MatrizAleatoriaNombre {
             }
             System.out.println("");
         }
+        
     }
 
 }

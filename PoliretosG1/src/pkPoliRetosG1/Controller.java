@@ -1,44 +1,18 @@
 package pkPoliRetosG1;
-<<<<<<< HEAD
-//import pkPoliRetosG1.Arrays;
-//import pkPoliRetosG1.Persona;
-=======
 
-<<<<<<< HEAD
-import java.util.InputMismatchException;
->>>>>>> 399095472dfccc5c5a020e3c1879a120ce3ed083
-=======
 
->>>>>>> 13b1e65ee818f3e2e0d26f79c38ed4b888b58074
 import java.util.Scanner;
 
 import pkPoliRetosG1.serieFiguras.Figuras;
 import pkPoliRetosG1.Arrays.Array;
 import pkPoliRetosG1.Loadings.Loading;
-import pkPoliRetosG1.cadenaCaracteres.CadenaCaracteres;
 
 
 
 public class Controller {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    private String nombre1;
-    private String nombre2;
-    private String apellido1;
-    private String apellido2;
-    //private Integer termino;
-    private Persona persona;
-=======
-    private final Scanner in = new Scanner(System.in);
->>>>>>> 399095472dfccc5c5a020e3c1879a120ce3ed083
-=======
->>>>>>> 13b1e65ee818f3e2e0d26f79c38ed4b888b58074
 
-    Scanner sc = new Scanner(System.in);
-    
-
-    public void run() throws InterruptedException {
+    public void run(Scanner sc) throws InterruptedException {
         printHeader();
 
 
@@ -64,14 +38,14 @@ public class Controller {
         Figuras.inicializarFiguras();
 
         //Cadena de caracteres
-        CadenaCaracteres.inicializarCadenasCaracteres();
+
 
         //Arrays
         Array.inicializarArrays(primerNombre, segundoNombre, primerApellido, segundoApellido);
         
 
         //Loading
-        Loading.inicializarLoadings(primerNombre, primerApellido, primerApellido);
+        Loading.inicializarLoadings(primerNombre, primerApellido, segundoApellido);
 
         //Recursion
 

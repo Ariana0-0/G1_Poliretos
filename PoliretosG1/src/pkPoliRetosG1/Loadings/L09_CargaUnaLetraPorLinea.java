@@ -31,7 +31,7 @@ public class L09_CargaUnaLetraPorLinea {
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
             System.out.print("\r" + barraString + " " + String.format("%.1f",porcentaje) + "%" );
-            Thread.sleep(100);
+            Thread.sleep(400);
         }
         System.out.println("Carga Completa.");
 
@@ -70,7 +70,7 @@ public class L09_CargaUnaLetraPorLinea {
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
             System.out.print("\r" + barraString + " " + String.format("%.1f",k1) + "%" );
-            Thread.sleep(100);
+            Thread.sleep(400);
             k1+=porcentajePorCaracter;
         }
         System.out.println("Carga Completa.");
@@ -108,8 +108,8 @@ public class L09_CargaUnaLetraPorLinea {
             }
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
-            System.out.println("\r" + barraString + " " + String.format("%.1f", w) + "%" );
-            Thread.sleep(100);
+            System.out.print("\r" + barraString + " " + String.format("%.1f", w) + "%" );
+            Thread.sleep(400);
             w+= porcentajePorCaracter;
         } while (w <= 101);
         System.out.println("Carga Completa.");

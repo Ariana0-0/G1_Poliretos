@@ -1,18 +1,15 @@
 package pkPoliRetosG1.Arrays;
-import java.util.Scanner;
 
 public class A01_PorcentajeNombre {
-    private static final Scanner sc = new Scanner(System.in);
 
-  
+    
     //For
-    public static void g1_A01_porcentajeNombreFor(){
-        System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
-        String nombreCompleto = sc.nextLine();
+    public static void g1_A01_porcentajeNombreFor(String nombre1, String nombre2, String apellido1, String apellido2, String[] porcentajesTexto){
+        
+        String nombreCompleto = nombre1 + " " + nombre2 + " " + apellido1 + " " + apellido2;
         String[] palabras = nombreCompleto.split(" ");
 
-        System.out.println("Ingrese los porcentajes de carga separados por espacio:");
-        String[] porcentajesTexto = sc.nextLine().split(" ");
+        
         int[] porcentajes = new int[porcentajesTexto.length];
         for (int i = 0; i < porcentajesTexto.length; i++) {
             porcentajes[i] = Integer.parseInt(porcentajesTexto[i]);
@@ -24,16 +21,14 @@ public class A01_PorcentajeNombre {
         for (int i = 0; i < palabras.length; i++) {
             imprimirBarra(palabras[i], porcentajes[i]);
         }
+
     }
     
     //While
-    public static void g1_A01_porcentajeNombreWhile(){
-        System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
-        String nombreCompleto = sc.nextLine();
+    public static void g1_A01_porcentajeNombreWhile(String nombre1, String nombre2, String apellido1, String apellido2, String[] porcentajesTexto){
+        String nombreCompleto = nombre1 + " " + nombre2 + " " + apellido1 + " " + apellido2;
         String[] palabras = nombreCompleto.split(" ");
 
-        System.out.println("Ingrese los porcentajes de carga separados por espacio:");
-        String[] porcentajesTexto = sc.nextLine().split(" ");
         int[] porcentajes = new int[porcentajesTexto.length];
         int i = 0;
 
@@ -53,13 +48,10 @@ public class A01_PorcentajeNombre {
     }
 
     //Do While
-    public static void g1_A01_porcentajeNombreDoWhile(){
-        System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
-        String nombreCompleto = sc.nextLine();
+    public static void g1_A01_porcentajeNombreDoWhile(String nombre1, String nombre2, String apellido1, String apellido2, String[] porcentajesTexto){
+        String nombreCompleto = nombre1 + " " + nombre2 + " " + apellido1 + " " + apellido2;
         String[] palabras = nombreCompleto.split(" ");
 
-        System.out.println("Ingrese los porcentajes de carga separados por espacio:");
-        String[] porcentajesTexto = sc.nextLine().split(" ");
         int[] porcentajes = new int[porcentajesTexto.length];
         int i = 0;
 
@@ -76,6 +68,7 @@ public class A01_PorcentajeNombre {
             imprimirBarra(palabras[i], porcentajes[i]);
             i++;
         } while (i < palabras.length);
+
     }
 
     private static void imprimirBarra(String palabra, int porcentaje) {
@@ -91,10 +84,12 @@ public class A01_PorcentajeNombre {
             }
         }
         barra.append(">]");
+        int letraMostrar = Math.max(2, (porcentaje * palabra.length()) / 100);
+        if (letraMostrar > palabra.length()) {
+            letraMostrar = palabra.length();
+        } 
+        String subPalabra = palabra.substring(0, letraMostrar);
 
-        int letrasMostrar = (porcentaje * palabra.length()) / 100;
-        letrasMostrar = Math.max(2, Math.min(letrasMostrar, palabra.length()));
-        String subPalabra = palabra.substring(0, letrasMostrar);
         System.out.printf("%s %3d%% %s%n", barra.toString(), porcentaje, subPalabra);
     }
 

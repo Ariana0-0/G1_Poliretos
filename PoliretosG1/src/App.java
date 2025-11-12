@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import pkPoliRetosG1.Controller;
 
 public class App {
@@ -5,8 +7,12 @@ public class App {
         
         System.out.println("                                        ");
 
+        Scanner sc = new Scanner(System.in);
+        
         Controller app = new Controller();
         
-        app.run();
+        app.run(sc);
+        
+        sc.close();
     }
 }

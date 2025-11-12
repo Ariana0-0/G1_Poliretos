@@ -38,7 +38,7 @@ public class L10_CargaDeArchivo {
         	//El String.format("%.1f", descargando) redondea el numero a una cifra decimal al mostrarse
         	Thread.sleep(250);
         }
-
+        System.out.println(" ");
         System.out.println("DOWNLOADED.");
     }
 
@@ -81,7 +81,7 @@ public class L10_CargaDeArchivo {
 
             pos++;
         }
-
+        System.out.println(" ");
         System.out.println("DOWNLOADED.");
 
     }
@@ -126,7 +126,7 @@ public class L10_CargaDeArchivo {
 
             pos++;
         } while (pos < longitudBarra);
-
+        System.out.println(" ");
         System.out.println("DOWNLOADED.");
     }
 

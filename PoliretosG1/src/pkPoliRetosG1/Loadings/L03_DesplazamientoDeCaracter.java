@@ -23,9 +23,10 @@ public class L03_DesplazamientoDeCaracter {
             
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("\r[" + barraEnString + " ]" + porcentaje + " %");
+            System.out.print("\r[" + barraEnString + " ]" + porcentaje + " %");
             Thread.sleep(100);
         }
+        System.out.println(" ");
         System.out.println("Carga Completa.");
 
     }
@@ -55,6 +56,7 @@ public class L03_DesplazamientoDeCaracter {
             Thread.sleep(100);
             k++;
         }
+        System.out.println(" ");
         System.out.println("Carga Completa.");
 
     }
@@ -84,6 +86,7 @@ public class L03_DesplazamientoDeCaracter {
             Thread.sleep(100);
             w++;
         }while (w <= 100);
+        System.out.println(" ");
         System.out.println("Carga Completa.");
     }
 

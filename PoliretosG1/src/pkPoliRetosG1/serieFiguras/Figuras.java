@@ -10,7 +10,7 @@ public class Figuras {
 
     public static void inicializarFiguras(){
 
-        final Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
         boolean keep = true;
         while (keep) {
@@ -49,11 +49,11 @@ public class Figuras {
             keep = askYesNo("¿Desea ejecutar otra figura? (s/n): ");
             
         }
-        in.close();
+        
     }
 
     private static int askPositiveInt(String prompt) {
-        final Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         while (true) {
             System.out.print(prompt);
             try {
@@ -68,7 +68,7 @@ public class Figuras {
     }
 
     private static int askOption(String prompt, int min, int max) {
-        final Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         while (true) {
             System.out.print(prompt);
             try {
@@ -83,7 +83,7 @@ public class Figuras {
     }
 
     private static boolean askYesNo(String prompt) {
-        final Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print(prompt);
         String s = in.next().trim().toLowerCase();
         return s.startsWith("s");

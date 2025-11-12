@@ -20,6 +20,7 @@ public class L02_CargaConCaracter {
             System.out.print("\r[" + barraEnString + " ]" + porcentaje + " %");
             Thread.sleep(100);
         }
+        System.out.println(" ");
         System.out.println("Carga Completa.");
 
     }
@@ -44,6 +45,7 @@ public class L02_CargaConCaracter {
             Thread.sleep(100);
             k++;
         }
+        System.out.println(" ");
         System.out.println("Carga Completa.");
     }
 
@@ -65,6 +67,7 @@ public class L02_CargaConCaracter {
             Thread.sleep(100);
             w++;
         }while (w <= 100);
+        System.out.println(" ");
         System.out.println("Carga Completa.");
     }
 

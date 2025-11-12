@@ -48,7 +48,7 @@ public class Loading {
         L05_CargaCambiandoLaPunta.g1_L05avanzarBarraCambiandoPuntaWhile();
         L05_CargaCambiandoLaPunta.g1_L05avanzarBarraCambiandoPuntaDoWhile();
 
-        System.out.println("L06) Crear una barra es de 20 caracteres, la barra <=> se desplaza de izquierda a derecha");
+        System.out.println("L06) Crear una barra, la barra <=> se desplaza de izquierda a derecha");
         L06_DesplazamientoDeBarra.g1_L06desplazarBarradeTresCaracteresFor();
         L06_DesplazamientoDeBarra.g1_L06desplazarBarradeTresCaracteresWhile();
         L06_DesplazamientoDeBarra.g1_L06desplazarBarradeTresCaracteresDoWhile();

@@ -18,6 +18,8 @@ public class L01_CargaMovimientoRotacional {
             if (pos == 3) pos = 0;
             else pos++;
         }
+        System.out.println(" ");
+        System.out.println("Carga Completa.");
     }
 
     public static void g1_L01indicarCargadeCeroACienWhile() throws InterruptedException{
@@ -39,6 +41,8 @@ public class L01_CargaMovimientoRotacional {
 
             k++;
         }
+        System.out.println(" ");
+        System.out.println("Carga Completa.");
 
     }
 
@@ -61,6 +65,8 @@ public class L01_CargaMovimientoRotacional {
 
             w++;
         } while (w <= 100);
+        System.out.println(" ");
+        System.out.println("Carga Completa.");
 
 
     }
